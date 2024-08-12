@@ -100,7 +100,7 @@ pub fn main() {
             let mut buf: Vec<u8> = vec![];
             wrap(stdin.read_to_end(&mut buf), PROGRAM, false);
             contents = String::from_utf8(buf)
-                .expect("This is a bug that shouldnt be possible. Please report this now.");
+                .expect("This is a bug that shouldn't be possible. Please report this now.");
         };
 
         let extension = Path::new(val).extension();
